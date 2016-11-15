@@ -1,0 +1,27 @@
+<h2>We sell these products</h2>
+<ul>
+	<% @products.each do |product| %>
+		<li><%= product.title %></li>
+	<% end %>
+</ul>
+
+<section id="products">
+	<div class="product clearfix">
+		<a href="product-detail.html">
+			<div class="product-image-container">
+				<img src="<%= asset_path 'cat.jpg' %>" alt="product image">
+				<span class="product-price">$9.99</span>
+			</div>
+			<p class="product-title">This is a really nice Cat.</p>
+		</a>
+	</div>
+	<div class="product clearfix">
+		<a href="product-detail.html">
+			<div class="product-image-container">
+				<img src="<%= asset_path 'dog.jpeg' %>" alt="product image">
+				<span class="product-price">$9.99</span>
+			</div>
+			<p class="product-title">This is a really nice Dog.</p>
+		</a>
+	</div>
+</section>
