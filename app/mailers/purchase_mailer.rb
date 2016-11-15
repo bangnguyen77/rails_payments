@@ -6,5 +6,5 @@ class PurchaseMailer < ActionMailer::Base
 		@purchase = purchase
 		mail to: purchase.email, subject: "Thanks for your business!"
 	end
-	
+
 end
