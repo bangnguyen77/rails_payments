@@ -17,7 +17,7 @@
                 
             <script src="https://checkout.stripe.com/checkout.js"></script>
             <%= hidden_field_tag 'stripeToken' %>
-            <%= hidden_field_tag 'amount', @product.price %>
+            <%= hidden_field_tag 'amount', @product.price_in_cents %>
             <%= hidden_field_tag 'stripeEmail' %>
             <button id="btn-buy" type="button" class="btn btn-success btn-lg btn-block"><span class="glyphicon glyphicon-ok"></span>Buy this!</button>
 
